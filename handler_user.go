@@ -80,3 +80,4 @@ func handlerListUsers(s *state,cmd command) error{
 }
 	return nil
 }
+

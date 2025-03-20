@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-
 	"github.com/Rajiv-test/blog_aggreGator/internal/config"
 	"github.com/Rajiv-test/blog_aggreGator/internal/database"
 	_ "github.com/lib/pq"
@@ -41,6 +40,7 @@ func main() {
 	cmds.register("register", handlerRegister)
 	cmds.register("reset", handlerReset)
 	cmds.register("users", handlerListUsers)
+	cmds.register("agg",handlerAgg)
 
 	if len(os.Args) < 2 {
 		log.Fatal("Usage: cli <command> [args...]")
